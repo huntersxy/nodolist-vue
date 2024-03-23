@@ -54,7 +54,7 @@ export default {
                 }
             })
                 .then(res => {
-                    this.tasks = JSON.stringify(res.data.tasks)
+                    this.tasks = JSON.stringify(res.data.tasks)||'[]'
 
                     this.jsonStr = JSON.parse(this.tasks)
 
