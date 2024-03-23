@@ -3,8 +3,7 @@ import axios from 'axios'
 import list from './list.vue'
 import top from './top.vue'
 import app from './main.vue'
-import log from './login.vue'
-import reg from './Register.vue'
+
 
 import info from './info.vue'
 
@@ -23,8 +22,15 @@ export default {
     data(){
         return{
             token_data : '',
+            currentPath: window.location.hash
         }
     },
+    computed: {
+   
+  },
+  mounted() {
+    
+  },
     methods: {
 
     }
@@ -35,6 +41,7 @@ export default {
 <template>
       
     <top></top>
+
 <!--     <div>
         <info></info>
         token:{{ token_data }}

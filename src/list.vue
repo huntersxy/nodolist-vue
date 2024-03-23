@@ -62,6 +62,8 @@ export default {
                 })
                 .catch(err => {
                     console.error(err);
+                    console.log("error")
+                    
                 })
         },
         post() {
@@ -80,6 +82,7 @@ export default {
                 })
                 .catch(function (error) {
                     console.log(error);
+                    alert("请先登录")
                 });
 
         },
@@ -106,7 +109,7 @@ export default {
 <template>
     <mdui-top-app-bar style="position: relative" >
 
-        <mdui-button-icon icon="menu"></mdui-button-icon>
+        <mdui-button-icon href="/login" icon="menu"></mdui-button-icon>
         <mdui-top-app-bar-title>Nodolist</mdui-top-app-bar-title>
         <div style="flex-grow: 1"></div>
         

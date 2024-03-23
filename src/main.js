@@ -18,5 +18,3 @@ const closeButton = navigationDrawer.querySelector("mdui-button");
 
 openButton.addEventListener("click", () => navigationDrawer.open = true);
 closeButton.addEventListener("click", () => navigationDrawer.open = false);
-
-

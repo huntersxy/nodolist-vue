@@ -1,9 +1,8 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+
+import reg from '../Register.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <reg></reg>
 </template>
